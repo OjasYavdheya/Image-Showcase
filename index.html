@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Sketch Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎨 Harsh's AI Sketches</h1>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="images/sketch1.jpg" alt="AI Sketch 1" onclick="openModal(this)">
+        <div class="info">
+          <p><strong>Prompt:</strong> A knight in neon armor</p>
+          <p><strong>AI Used:</strong> Midjourney</p>
+          <div class="buttons">
+            <button onclick="openModal(this.previousElementSibling)">🔍 View Full</button>
+            <a href="images/sketch1.jpg" download>⬇ Download</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="images/sketch2.jpg" alt="AI Sketch 2" onclick="openModal(this)">
+        <div class="info">
+          <p><strong>Prompt:</strong> Cyberpunk temple in Japan</p>
+          <p><strong>AI Used:</strong> DALL·E 3</p>
+          <div class="buttons">
+            <button onclick="openModal(this.previousElementSibling)">🔍 View Full</button>
+            <a href="images/sketch2.jpg" download>⬇ Download</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more cards below as needed -->
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Harsh Creations
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <img id="modalImg" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
