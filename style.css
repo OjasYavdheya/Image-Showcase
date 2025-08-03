@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f69a54;
+  background-color: #ff6f00;
   color: #e0e0e0;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
@@ -13,7 +13,7 @@ body {
 
 header {
   padding: 20px;
-  background: rgb(0, 66, 0);
+  background: #718000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +43,7 @@ main {
   background: rgb(0, 29, 29);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 4px rgb(0, 97, 97);
   transition: transform 0.3s;
 }
 
@@ -104,3 +104,25 @@ footer {
   border: 4px solid #00ffc6;
   border-radius: 10px;
 }
+
+.prompt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+}
+
+/* Modal styles */
+.modal-content {
+  text-align: center;
+  max-width: 90%;
+  color: #e0e0e0;
+}
+
+.modal-content img {
+  max-width: 90%;
+  max-height: 80vh;
+  margin-bottom: 20px;
+}
+
